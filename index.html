@@ -4,7 +4,7 @@
     <title>Commutes and Destinations Map</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="commutes.css" rel="stylesheet">
+    <!-- <link href="commutes.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -212,7 +212,7 @@
         </div>
       </div>
     </div>
-    <script src="commutes.js"></script>
+    <!-- <script src="commutes.js"></script> -->
     <script>
       const CONFIGURATION = {
         "defaultTravelMode": "DRIVING",
@@ -228,14 +228,14 @@
           }
         ],
         "mapOptions": {"center":{"lat":47.6115,"lng":-122.3222},"fullscreenControl":true,"mapTypeControl":false,"streetViewControl":false,"zoom":14,"zoomControl":true,"maxZoom":20,"mapId":""},
-        "mapsApiKey": "YOUR_API_KEY_HERE"
+        "mapsApiKey": "Your_API_KEY"
       };
 
       function initMap() {
         new Commutes(CONFIGURATION);
       }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE&callback=initMap&libraries=places,geometry&solution_channel=GMP_QB_commutes_v3_c" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=Your_API_KEY&callback=initMap&libraries=places,geometry&solution_channel=GMP_QB_commutes_v3_c" async defer></script>
     <script src="script.js"></script>
   </body>
 </html>
